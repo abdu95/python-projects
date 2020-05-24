@@ -1,7 +1,13 @@
-# when this 10 is about to be stored in the memory,
-# first it will get converted to its binary representation (1010)
-# then it will be stored in the computers memory
-price = 10
+# integer
 price = 20
-# now price is 20, because python interprets line by line
+# floating point number - float
+rating = 4.9
+# string
+name = 'Abdu'
+# boolean
+# '_' - used to separate multiple words in a variables name
+# Python is case sensitive PL.
+# when defining variables we should always use lowercase letters
+# False and True are special keywords in the language, so uppercase
+is_published = False
 print(price)
