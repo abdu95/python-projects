@@ -1,4 +1,3 @@
-age = 20
-name = 'John Smith'
-is_new_patient = True
-print(name)
+name = input('What is your name? ')
+color = input('What is your favorite color? ')
+print(name + ' likes ' + color)
