@@ -1,10 +1,7 @@
-print ("Abdu")
-print('o---')
-print(' ||||')
-# python executes line by line
-
-# expression - produces a value
-# when Python interpreter tries to execute this line,
-# it first will evaluate the expression
-# expression produces 10 asterisks, then they are printed
-print('*' * 10)
+# function will print the message on the terminal
+# and will wait for the user to enter a value
+# whatever the user enters, this input function will return
+# we save it to var
+name = input('What is your name? ')
+# concatenation
+print('Hi ' + name)
