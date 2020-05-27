@@ -1,3 +1,7 @@
-name = input('What is your name? ')
-color = input('What is your favorite color? ')
-print(name + ' likes ' + color)
+first = 'Abdu'
+last = 'Malikov'
+# string concatenation: it's hard to visualize the output
+message = first + ' [' + last + '] is a coder'
+# formatted string
+msg = f'{first} [{last}] is a coder'
+print(msg)
