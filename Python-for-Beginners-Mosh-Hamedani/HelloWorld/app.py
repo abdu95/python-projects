@@ -12,4 +12,3 @@ y = 2.4
 print(math.ceil(y))
 print(math.floor(y))
 # Google: Python 3 math module
-
