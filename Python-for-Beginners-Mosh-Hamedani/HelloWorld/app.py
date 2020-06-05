@@ -1,14 +1,13 @@
-import math
+# house: 1M $
+# if the buyer has good credit, they will need to put down 10 percent of the price of this property
+# otherwise they need to put down 20 percent
+# display payment
+price = 1000000
+has_good_credit = True
 
-x = 2.9
-print(round(x))
-print(abs(-2.5))
-#  if you want to write a program that involves complex mathematical calculations,
-#  you need to import the math module
-#  A module in Python is a separate file with some reusable code.
-#  math is an object like a string, so we can access it's methods using the dot operator
+if has_good_credit:
+    price = price - (price * 0.1)
+else:
+    price = price - (price * 0.2)
 
-y = 2.4
-print(math.ceil(y))
-print(math.floor(y))
-# Google: Python 3 math module
+print(f"Payment: {price}")
