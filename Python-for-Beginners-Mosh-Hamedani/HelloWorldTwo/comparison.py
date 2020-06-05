@@ -1,11 +1,7 @@
-temperature = 40
-
-# expression - code that produces a (boolean) value
-if temperature == 40:
-    print("It's a super hot day")
-elif temperature < 30:
-    print("It's not a hot day")
-elif temperature >= 30:
-    print("It's a hot day")
+name = input("Your name: ")
+if len(name) < 3:
+    print("Name must be at least 3 characters")
+elif len(name) > 50:
+    print("Name can be a maximum of 50 characters")
 else:
-    print("It's usual day")
+    print("Name looks good")
