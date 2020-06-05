@@ -1,13 +1,6 @@
-is_hot = False
-is_cold = False
+# house: 1M $
+# if the buyer has good credit, they will need to put down 10 percent of the price of this property
+# otherwise they need to put down 20 percent
+price = 1000000
 
-# shift + tab to terminate block --> go back to line beginning
-if is_hot:
-    print("It's a hot day")
-    print("Drink plenty of water")
-elif is_cold:
-    print("It's a cold day")
-    print("Wear warm clothes")
-else:
-    print("It's a lovely day")
-print("Enjoy your day")
+if
