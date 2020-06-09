@@ -1,18 +1,12 @@
-import random
-random_number = random.randint(1,10)
-
-i = 0
-number_found = False
-
-while i < 3:
-    users_guess = int(input("Guess: "))
-    # increment for each guess, not for each wrong guess
-    i = i + 1
-    if users_guess == random_number:
-        print("You won")
-        number_found = True
-        # no need to include number_found in while condition to exit the loop, just break is enough
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input("Guess: "))
+    guess_count += 1
+    if guess == secret_number:
+        print("You won!")
         break
-
-if number_found == False:
+# else of while - gets executed if while loop is completes successfully without an immediate break
+else:
     print("Sorry you failed")
