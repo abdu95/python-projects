@@ -31,8 +31,3 @@ for item in range(5, 10):
 print("add step: 2 steps forward")
 for item in range(5, 10, 2):
     print(item)
-
-
-
-
-
