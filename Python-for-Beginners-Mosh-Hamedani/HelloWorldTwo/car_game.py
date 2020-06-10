@@ -1,18 +1,22 @@
 command = ""
-# I was thinking a lot: how I can use the variable in the while condition if I declare it inside while condition
-# how I can use the variable before its declaration
-# the answer is simple: simply declare the variable, assign default value and use variable in while condition
-# (then change value of variable inside while loop)
+car_started = False
+car_stopped = False
+
 while True:
     command = input("> ").lower()
     if command == "start":
-        print("Car started...Ready to go:")
+        if car_started != True:
+            print("Car started...Ready to go:")
+            car_started = True
+        else:
+            print("Hey, the car is already started, what are you doing?")
     elif command == "stop":
-        print("Car stopped.")
-    # facepalm (- -) just because author typed help command first, I thought user will first type help, and separated this command from others.
-    # But this is same command as start, stop
+        if car_stopped != True:
+            print("Car stopped.")
+            car_stopped = True
+        else:
+            print("Hey, the car is already stopped, what are you doing?")
     elif command == "help":
-        # when you use triple quotes, message appears as it is (with indentation)
         print("""
 start - to start the car
 stop - to stop the car
@@ -22,6 +26,3 @@ quit - to exit
         break
     else:
         print("Sorry, I don't understand that")
-
-
-
