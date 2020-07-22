@@ -19,8 +19,8 @@ print(customer["name"])
 # print(customer["birthdate"])  # KeyError: 'birthdate'
 # case sensitive
 # print(customer["Name"])  # KeyError: 'Name'
-# to get around this we can use the get() method. if you use a key that doesn't exist here, it doesn't yell at us. it simply returns None
-# None - is an object in python that represents the absence of a value.
+# to get around this we can use the get() method. if you use a key that doesn't exist here, it doesn't yell at us.
+# it simply returns None - an object in python that represents the absence of a value.
 print(customer.get("birthdate"))
 # we can also optionally supply a default value, if this dictionary doesn't have this key
 print(customer.get("birthdate", "Jan 1 1980"))
